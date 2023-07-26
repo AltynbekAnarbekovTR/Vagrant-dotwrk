@@ -1,0 +1,11 @@
+RewriteEngine On
+RewriteBase /
+
+# Правило для перенаправления на index.php, если url path пустой
+RewriteRule ^$ entry.php [L]
+
+# Правило для обработки запросов на nsk
+RewriteRule ^nsk$ entry.php?city=nsk [L]
+
+# Правило для обработки запросов на l-a
+RewriteRule ^l-a$ entry.php?city=l-a [L]
